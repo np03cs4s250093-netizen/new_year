@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy New Year My Love</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Floating ambient hearts -->
+      <div class="floating-hearts" id="floatingHearts"></div>
+
+      <!-- Music control -->
+      <button id="musicToggle" class="music-toggle" aria-label="Toggle music">
+        <svg
+          class="icon-music"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+          <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+        </svg>
+        <svg
+          class="icon-mute hidden"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <line x1="23" y1="9" x2="17" y2="15"></line>
+          <line x1="17" y1="9" x2="23" y2="15"></line>
+        </svg>
+      </button>
+
+      <!-- Main content -->
+      <div class="content-wrapper" id="contentWrapper">
+        <!-- Step 0: Hero Opening -->
+        <div class="step step-0 active" data-step="0">
+          <!-- Decorative doodles -->
+          <svg class="doodle doodle-sparkle" viewBox="0 0 100 100">
+            <path
+              d="M50 10 L55 35 L75 40 L55 50 L60 75 L50 60 L40 75 L45 50 L25 40 L45 35 Z"
+              fill="#f9a8d4"
+            />
+          </svg>
+          <svg class="doodle doodle-dots" viewBox="0 0 100 100">
+            <circle cx="30" cy="30" r="3" fill="#fda4af" />
+            <circle cx="70" cy="50" r="4" fill="#fbcfe8" />
+            <circle cx="50" cy="70" r="2.5" fill="#f9a8d4" />
+            <path
+              d="M40 20 Q 45 10, 50 20 T 60 20"
+              stroke="#f472b6"
+              stroke-width="2"
+              fill="none"
+            />
+          </svg>
+
+          <div class="hero-content">
+            <div class="glow-wrapper">
+              <h1 class="hero-title">Happy New Year</h1>
+              <p class="hero-subtitle">Sapana💕</p>
+              <div class="divider"></div>
+            </div>
+            <div class="continue-hint">
+              <span>tap anywhere to continue</span>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 1: Message Card -->
+        <div class="step step-1" data-step="1">
+          <svg class="doodle doodle-wave" viewBox="0 0 100 100">
+            <path
+              d="M10 50 Q 25 20, 40 50 T 70 50 Q 85 80, 95 50"
+              stroke="#f472b6"
+              stroke-width="3"
+              fill="none"
+              stroke-linecap="round"
+              stroke-dasharray="3,5"
+            />
+            <circle cx="30" cy="35" r="2.5" fill="#f9a8d4" />
+            <circle cx="75" cy="65" r="3" fill="#fbcfe8" />
+          </svg>
+
+          <div class="card-container">
+            <div class="card-bg"></div>
+            <div class="card-main">
+              <div class="tape tape-left"></div>
+              <div class="tape tape-right"></div>
+              <div class="card-header">
+                <h2>To the One Who Changed Everything 💝</h2>
+              </div>
+              <div class="card-content">
+                <p>
+                  You mean so much more to me than words can say. Every laugh we
+                  share 😊, every quiet moment together, every time we get
+                  through something tough — it all shows me what love really is
+                  💫
+                </p>
+                <p>
+                  I'm grateful for everything you bring into my life. You're
+                  patient with me when I need it 🤍 You give me strength when I
+                  feel weak. And you love me even on the days I don't deserve it
+                  🌸
+                </p>
+              </div>
+              <svg
+                class="heart-deco heart-top"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                />
+              </svg>
+              <svg
+                class="heart-deco heart-bottom"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="continue-text">tap to continue →</div>
+        </div>
+
+        <div class="step step-3" data-step="3">
+          <svg class="doodle doodle-vine" viewBox="0 0 100 150">
+            <path
+              d="M50 10 Q 60 40, 45 70 Q 35 100, 50 130"
+              stroke="#f472b6"
+              stroke-width="3"
+              fill="none"
+              stroke-linecap="round"
+            />
+            <circle cx="55" cy="30" r="4" fill="#f9a8d4" />
+            <circle cx="42" cy="65" r="4.5" fill="#fbcfe8" />
+            <circle cx="48" cy="110" r="4" fill="#fda4af" />
+          </svg>
+
+          <div class="grow-container">
+            <div class="grow-bg"></div>
+            <div class="grow-card">
+              <div class="blob blob-1"></div>
+              <div class="blob blob-2"></div>
+              <h2 class="grow-title">
+                <svg
+                  class="title-heart"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                  />
+                </svg>
+              </h2>
+              <div class="grow-content">
+                <p>
+                  I know I've messed up Said things I wish I could take back.
+                  Done things that hurt you. But I'm learning. I'm growing. And
+                  I'm trying to become better — not just for me, but for us 💕
+                </p>
+                <p>
+                  This new year, I want us to understand each other even more To
+                  grow together. To find peace. I want to really hear you, meet
+                  you where you are, and love you the way you deserve
+                </p>
+                <p>
+                  Before you, I thought I had everything figured out. But you
+                  showed me parts of myself I never knew existed 🦋 You taught
+                  me how to be softer, vulnerable, and how to let someone truly
+                  in 🌸
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="continue-text">tap to continue →</div>
+        </div>
+
+        <!-- Step 4: Grand Finale -->
+        <div class="step step-4" data-step="4">
+          <svg class="doodle doodle-confetti-1" viewBox="0 0 100 100">
+            <path
+              d="M50 20 L52 40 L50 40 L48 40 Z"
+              stroke="#f472b6"
+              stroke-width="2"
+              fill="none"
+            />
+            <path
+              d="M50 20 L62 30 L60 32 L50 25 Z"
+              stroke="#f472b6"
+              stroke-width="2"
+              fill="none"
+            />
+            <path
+              d="M50 20 L38 30 L40 32 L50 25 Z"
+              stroke="#f472b6"
+              stroke-width="2"
+              fill="none"
+            />
+            <circle cx="70" cy="60" r="3" fill="#fda4af" />
+            <circle cx="30" cy="65" r="3" fill="#fbcfe8" />
+          </svg>
+          <svg class="doodle doodle-confetti-2" viewBox="0 0 100 100">
+            <path d="M50 30 L52 45 L47 45 Z" fill="#f9a8d4" />
+            <path d="M30 50 L32 65 L27 65 Z" fill="#fbcfe8" />
+            <circle cx="70" cy="40" r="2.5" fill="#fda4af" />
+          </svg>
+
+          <div class="finale-container">
+            <div class="wish-card-wrapper">
+              <div class="wish-glow"></div>
+              <div class="wish-card">
+                <div
+                  class="floating-hearts-finale"
+                  id="floatingHeartsFinale"
+                ></div>
+                <h2>My Wish For Us This Year 🎆</h2>
+                <p>
+                  I hope this year brings us even closer More laughs. Deeper
+                  understanding. Something really beautiful together May every
+                  sunrise feel like a fresh start, and every sunset remind us to
+                  be grateful. Here's to growing together, loving harder, and
+                  building our story
+                </p>
+              </div>
+            </div>
+
+            <div class="final-message-wrapper">
+              <div class="final-message-bg"></div>
+              <div class="final-message">
+                <div class="tape-final tape-final-left"></div>
+                <div class="tape-final tape-final-right"></div>
+                <svg
+                  class="heart-corner heart-corner-tr"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                  />
+                </svg>
+                <svg
+                  class="heart-corner heart-corner-bl"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                  />
+                </svg>
+                <p class="final-title">
+                  Happy New Year,<br />My cute, beautiful, loving, caring, and
+                  many more... Sapana 🎊✨
+                </p>
+                <p class="final-subtitle">Thank you for being in my life 💝</p>
+                <p class="final-signature">— Sagar 💕</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Spotify Player -->
+      <div class="spotify-player">
+        <iframe
+          style="border-radius: 12px"
+          src="https://open.spotify.com/embed/track/50x1Ic8CaXkYNvjmxe3WXy?utm_source=generator&theme=0"
+          width="100%"
+          height="80"
+          frameborder="0"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        >
+        </iframe>
+      </div>
+
+      <!-- Navigation buttons -->
+      <button id="backBtn" class="nav-btn back-btn hidden">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path d="M19 12H5M12 19l-7-7 7-7" />
+        </svg>
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
